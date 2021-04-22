@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 5
+      idle-timeout: 600000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+    initialization-mode: always
+    schema: classpath*:templates/sql/schema.sql
+    data: classpath*:templates/sql/data.sql
+  h2:
+    console:
+      path: /h2-console
+      settings:
+        trace: true
+        web-allow-others: true
+      enabled: true
+server:
+  port: 9090

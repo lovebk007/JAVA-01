@@ -1,0 +1,9 @@
+springbean/Teacher.class
+xmlbean/XmlBeanAssemblyTest.class
+springbean/TeachTest.class
+xmlbean/Course.class
+javabean/BookTest.class
+javabean/Book.class
+springbean/SchoolConfig.class
+javabean/impl/BookImpl.class
+javabean/BookConfig.class
